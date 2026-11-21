@@ -1,0 +1,57 @@
+---
+import { assets } from '../data/assets';
+---
+
+<section id="about" class="relative bg-sand py-20 md:py-28">
+  <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-12 md:gap-14 md:px-8">
+    <div class="reveal md:col-span-5">
+      <picture>
+        <source srcset={assets.portraits.about.webp} type="image/webp" />
+        <img
+          src={assets.portraits.about.jpg}
+          alt={assets.portraits.about.alt}
+          class="aspect-[4/5] w-full object-cover object-[center_20%]"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
+    </div>
+
+    <div class="reveal md:col-span-7 md:pl-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-coral">About</p>
+      <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-navy md:text-4xl">
+        From software craft to data systems
+      </h2>
+      <div class="mt-6 space-y-4 text-base leading-relaxed text-muted md:text-lg">
+        <p>
+          I’m Maleesha Achintha Rodrigo — a Software Engineering graduate from the University of
+          Westminster (IIT) pivoting into Data Engineering. I care about dependable pipelines,
+          clear data models, and tools people actually use.
+        </p>
+        <p>
+          My experience building repair-shop systems taught me how operational data moves: inventory,
+          customer records, messaging triggers, and reporting. That foundation — SQL, databases, and
+          automation — is what I bring to data engineering roles.
+        </p>
+      </div>
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wider text-muted">Focus</dt>
+          <dd class="mt-1 font-medium text-navy">Data Engineering</dd>
+        </div>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wider text-muted">Based in</dt>
+          <dd class="mt-1 font-medium text-navy">Kelaniya, Sri Lanka</dd>
+        </div>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wider text-muted">Education</dt>
+          <dd class="mt-1 font-medium text-navy">BEng (Hons) Software Engineering</dd>
+        </div>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wider text-muted">Open to</dt>
+          <dd class="mt-1 font-medium text-navy">Full-time Data Engineer roles</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
