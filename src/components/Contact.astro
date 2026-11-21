@@ -1,0 +1,59 @@
+---
+import { assets } from '../data/assets';
+
+const email = 'maleeshaachintha@gmail.com';
+const phone = '076 796 3545';
+---
+
+<section id="contact" class="bg-sand py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-5 md:px-8">
+    <div class="reveal grid gap-10 md:grid-cols-12 md:items-end md:gap-14">
+      <div class="md:col-span-7">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-coral">Contact</p>
+        <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight text-navy md:text-5xl">
+          Let’s talk about data engineering roles
+        </h2>
+        <p class="mt-4 max-w-xl text-base leading-relaxed text-muted md:text-lg">
+          Open to full-time Data Engineer opportunities. Reach out by email — happy to share more
+          about projects, coursework, and what I’m learning next.
+        </p>
+      </div>
+
+      <div class="md:col-span-5 md:text-right">
+        <a
+          href={`mailto:${email}?subject=Data%20Engineer%20opportunity`}
+          class="inline-flex w-full items-center justify-center rounded-full bg-coral px-6 py-4 text-base font-semibold text-white transition hover:bg-coral-deep md:w-auto"
+        >
+          Email me
+        </a>
+        <a
+          href={assets.documents.cv}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-3 inline-flex w-full items-center justify-center rounded-full border border-navy/20 bg-white px-6 py-4 text-base font-semibold text-navy transition hover:border-coral hover:text-coral md:mt-4 md:w-auto md:ml-0"
+        >
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal mt-14 grid gap-6 border-t border-navy/10 pt-10 sm:grid-cols-3">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-muted">Email</p>
+        <a href={`mailto:${email}`} class="mt-2 block font-medium text-navy hover:text-coral">
+          {email}
+        </a>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-muted">Phone</p>
+        <a href="tel:+94767963545" class="mt-2 block font-medium text-navy hover:text-coral">
+          {phone}
+        </a>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-muted">Location</p>
+        <p class="mt-2 font-medium text-navy">Kelaniya, Sri Lanka</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+---
+import { assets } from '../data/assets';
+---
+
+<section class="relative h-48 overflow-hidden md:h-72" aria-label={assets.portraits.experience.alt}>
+  <picture>
+    <source srcset={assets.portraits.experience.webp} type="image/webp" />
+    <img
+      src={assets.portraits.experience.jpg}
+      alt={assets.portraits.experience.alt}
+      class="h-full w-full object-cover object-[center_42%]"
+      loading="lazy"
+      decoding="async"
+    />
+  </picture>
+  <div class="absolute inset-0 bg-navy/25"></div>
+</section>
